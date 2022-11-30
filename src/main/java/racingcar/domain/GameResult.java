@@ -9,6 +9,7 @@ import racingcar.domain.car.Car;
 
 public class GameResult {
 
+    // TODO player를 내부 필드화 할 때 안 할 때 차이점 고민해보기
     private final Player player;
     private Map<String, Integer> playerPosition = new LinkedHashMap<>();
 
@@ -28,6 +29,7 @@ public class GameResult {
         }
     }
 
+    // TODO 코드 뜯어보며 공부해보기
     public List<String> getFinalWinner() {
         List<String> finalWinner = new ArrayList<>();
         int maxValue = Collections.max(playerPosition.values());
